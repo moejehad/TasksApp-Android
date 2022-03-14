@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    tools:context=".addTask">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/varela"
+        android:text="@string/add"
+        android:textColor="@color/colorTitle"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_arrow"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/Tasktitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="15dp"
+        android:background="@drawable/input"
+        android:inputType="text"
+        android:hint="@string/title"
+        android:fontFamily="@font/varela"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/title"/>
+
+    <EditText
+        android:id="@+id/TaskDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="15dp"
+        android:background="@drawable/input"
+        android:hint="@string/Details"
+        android:fontFamily="@font/varela"
+        android:textSize="20sp"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        app:layout_constraintTop_toBottomOf="@+id/Tasktitle"/>
+
+
+    <TextView
+        android:id="@+id/TaskDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/input"
+        android:drawableEnd="@drawable/ic_calendar"
+        android:fontFamily="@font/varela"
+        android:hint="@string/Date"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TaskDetails" />
+
+
+    <TextView
+        android:id="@+id/TaskTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/input"
+        android:drawableEnd="@drawable/ic_time"
+        android:fontFamily="@font/varela"
+        android:hint="@string/time"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TaskDate" />
+
+    <Button
+        android:id="@+id/addTask"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/varela"
+        android:padding="15dp"
+        android:text="@string/add"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TaskTime" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

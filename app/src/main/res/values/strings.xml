@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Tasks</string>
+    <string name="add">Add Task</string>
+    <string name="title">Task Title</string>
+    <string name="Details">Task Details</string>
+    <string name="Date">Task Date</string>
+    <string name="time">Task Time</string>
+    <string name="nodata">No Data</string>
+</resources>
